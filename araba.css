@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    min-height: 100vh;
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "main"
+    ;
+    grid-template-rows: 100px 1fr;
+}
+header{
+    background-color: black;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+}
+header > span{
+    flex: 0 0 80%;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+header > span > a{
+    text-decoration: none;
+    color: white;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+header > span > a:hover{
+    opacity: 0.7;
+}
+header > img{
+    width: 70px;
+    height: 70px;
+}
+main{
+    background: repeat center /cover url(imagesw/2022-mercedes-benz-eqs-580-edition-one-exterior-front-quarter.jpg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+main > a{
+     width: 130px;
+     height: 50px;
+     background-color: blue;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     color: white;
+     border-radius: 20px;
+     margin-left: 15%;
+     transition: transform 1s ease, background-color 1s ease;
+}   
+main > a:hover{
+    transform: scale(1.05);
+    background-color: white;
+    color: blue;
+}
+main>p{
+    margin-left: 15%;
+    margin-bottom: 3%;
+    max-width: 20%;
+    color: white;
+    font-size: 1.4rem;
+}
+a{
+  text-decoration: none;
+  list-style: none;
+  
+   
+}
+footer{
+    display: flex;
+    gap: 40px;
+    background-color: black;
+    color: white;
+    height: 1fr;
+    flex-wrap: wrap;
+}
+footer>ul{
+    width: 20%;
+}
+a{
+    text-decoration: none;
+}
+footer>ul>a>li{
+    color: white;
+}
+footer>ul>h1{
+    margin-bottom: 20px;
+}
+footer>ul>a{
+    color: black;
+}
+footer>ul>a:hover{
+    opacity: 0.7;
+}
+li{
+    list-style: none;
+}
